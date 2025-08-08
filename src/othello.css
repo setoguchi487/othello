@@ -1,0 +1,34 @@
+.board {
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* 黒石 */
+.cell.X {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+/* 白石 */
+.cell.O {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
